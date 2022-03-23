@@ -11,7 +11,7 @@ def call(String name = 'human') {
             ]
         )
     }
-    def scriptOutput = sh( returnStdout: true,
+    def scriptOutput = sh(
         script: '''
             #!/bin/bash
             pwd
@@ -19,4 +19,5 @@ def call(String name = 'human') {
         '''
     )
     echo "${scriptOutput}"
+
 }
