@@ -11,11 +11,12 @@ def call(String name = 'human') {
             ]
         )
     }
-    sh( returnStdout: true,
+    def scriptOutput = sh( returnStdout: true,
         script: '''
             #!/bin/bash
             pwd
             ls
         '''
     )
+    echo "${scriptOutput}"
 }
