@@ -6,7 +6,7 @@ def call(String name = 'human') {
         checkout(
             [
                 $class: 'GitSCM',
-                brances: [[name: master]],
+                branches: [[name: 'master']],
                 userRemoteConfigs: [[url: 'https://github.com/reidytech/sample-jenkins-pipeline']]
             ]
         )
