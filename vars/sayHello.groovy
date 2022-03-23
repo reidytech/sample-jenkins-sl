@@ -11,4 +11,11 @@ def call(String name = 'human') {
             ]
         )
     }
+    sh( returnStdout: true,
+        script: '''
+            #!/bin/bash
+            pwd
+            ls
+        '''
+    )
 }
