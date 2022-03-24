@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call(Map m) {
+def call() {
     // echo "Hello, ${name}."
     // dir("test app") {
     //     checkout(
@@ -20,7 +20,7 @@ def call(Map m) {
     // )
     // echo "Checking out SCM ONCE again"
     // checkout scm
-    echo "${m.TERRAGUARD}"
-    echo "${m.APP_NAME}"
+    echo "${env.TERRAGUARD}"
+    echo "${env.APP_NAME}"
 
 }
