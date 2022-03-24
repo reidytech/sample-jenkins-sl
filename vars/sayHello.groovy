@@ -1,7 +1,8 @@
 #!/usr/bin/env groovy
 
-def call(String name = 'human') {
-    echo "Hello, ${name}."
+def call(Map scm) {
+    echo "${scm}"
+
     dir("test app") {
         checkout(
             [
