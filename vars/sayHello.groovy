@@ -18,6 +18,6 @@ def call(String name = 'human') {
             ls
         '''
     )
-    echo "${scriptOutput}"
+    echo "Checking out SCM ONCE again"
     checkout scm
 }
