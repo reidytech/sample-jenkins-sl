@@ -1,8 +1,7 @@
 #!/usr/bin/env groovy
 
-def call(Map scm) {
-    echo "${scm}"
-
+def call(String name = 'human') {
+    echo "Hello, ${name}."
     dir("test app") {
         checkout(
             [
@@ -20,5 +19,5 @@ def call(Map scm) {
         '''
     )
     echo "${scriptOutput}"
-
+    checkout scm
 }
