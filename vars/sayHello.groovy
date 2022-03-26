@@ -23,6 +23,6 @@ def call() {
     echo "${env.TERRAGUARD}"
     echo "${env.APP_NAME}"
     def showFilePath = pwd() + '/tf.out'
-    echo $showFilePath
+    echo "$showFilePath"
 
 }
